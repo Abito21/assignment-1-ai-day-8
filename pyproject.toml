@@ -1,0 +1,24 @@
+[project]
+name = "assignment-1-ai-day-8"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.16.4",
+    "fastapi[standard]>=0.116.1",
+    "isort>=6.0.1",
+    "ruff>=0.12.7",
+    "scalar-fastapi>=1.2.3",
+    "sqlmodel>=0.0.24",
+    "uvicorn>=0.35.0",
+]
+
+[tool.ruff]
+line-length = 88
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # flake8 errors
+    "I", # isort errors
+]
